@@ -5,8 +5,11 @@
     <string name="mode_bus">🚌 Bus</string>
     <string name="mode_train">🚆 Train</string>
     <string name="find_stop_button">Find Nearest Stop</string>
-    <string name="status_idle">Choose a mode and tap the button to find your nearest stop.</string>
+    <string name="status_idle">Tap Find Nearest Stop to search again, or switch between Bus and Train.</string>
     <string name="status_refreshing_location">Refreshing your location…</string>
+    <string name="status_waiting_for_gps">Waiting for a GPS fix… (being near a window or outside helps)</string>
+    <string name="status_location_off">Location is turned off on your phone. Turn it on, then tap Find Nearest Stop.</string>
+    <string name="approximate_location_warning">Precise location is off, so the nearest stop may be wrong. Turn on \"Use precise location\" in this app\'s location permission settings.</string>
     <string name="status_searching">Searching for nearby %1$s stops…</string>
     <string name="status_opening_maps">Opening %1$s in Google Maps…</string>
     <string name="status_no_location">Couldn\'t get your location. Check your GPS/location settings and try again.</string>

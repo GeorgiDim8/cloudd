@@ -6,10 +6,16 @@ live/scheduled departures Maps shows for that stop.
 
 ## How it works
 
-1. Tap **Find Nearest Stop** (or launch the app - it defaults to Bus mode).
-2. The app requests a fresh GPS/network location fix and waits ~2.5 seconds
-   for it to settle (a cold location fix is often inaccurate for the first
-   second or two), taking the most recently updated reading.
+1. Open the app - it searches immediately in Bus mode. Tapping **Bus** /
+   **Train** or **Find Nearest Stop** searches again. Coming back from Maps
+   within 2 minutes keeps the last result (so the switch-stop button stays
+   usable); after that, reopening the app searches again.
+2. If the phone's Location switch is off, the system "turn on location"
+   dialog is shown. The app then requests fresh location updates and waits
+   at least ~2.5 seconds for the fix to settle (a cold fix is often
+   inaccurate). If no fix has arrived yet it keeps waiting, up to 12
+   seconds, before falling back to the phone's last known location (if it
+   is under 5 minutes old).
 3. It calls the [Places API (New) "Nearby Search"](https://developers.google.com/maps/documentation/places/web-service/nearby-search)
    endpoint, restricted to `bus_station` (Bus mode) or `train_station` /
    `subway_station` / `light_rail_station` (Train mode), sorted by distance.
