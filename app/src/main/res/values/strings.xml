@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Transit Stop Finder</string>
+
+    <string name="subtitle">Find the closest stop and see live arrivals in Google Maps</string>
+    <string name="mode_bus">🚌 Bus</string>
+    <string name="mode_train">🚆 Train</string>
+    <string name="find_stop_button">Find Nearest Stop</string>
+    <string name="status_idle">Choose a mode and tap the button to find your nearest stop.</string>
+    <string name="status_refreshing_location">Refreshing your location…</string>
+    <string name="status_searching">Searching for nearby %1$s stops…</string>
+    <string name="status_opening_maps">Opening %1$s in Google Maps…</string>
+    <string name="status_no_location">Couldn\'t get your location. Check your GPS/location settings and try again.</string>
+    <string name="status_no_stops">No %1$s stops found nearby. Try again or switch modes.</string>
+    <string name="status_network_error">Couldn\'t reach Google Places. Check your internet connection and API key.</string>
+    <string name="status_permission_required">Location permission is required to find nearby stops.</string>
+    <string name="switch_stop_prefix">Also very close: </string>
+    <string name="switch_stop_button">Switch to %1$s (%2$s)</string>
+</resources>
