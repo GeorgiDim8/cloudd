@@ -49,17 +49,17 @@ Standard single-module Android app, written in Kotlin:
    For production use, restrict the key to Android apps (by package name
    `com.cloudd.transitstopfinder` + your signing certificate's SHA-1) and
    to the Places API.
-2. Copy `local.properties.example` to `local.properties` (git-ignored) and
-   set:
+2. Open the project in Android Studio and let it sync. The committed Gradle
+   wrapper pins Gradle 8.7, which Android Gradle Plugin 8.5.2 requires -
+   don't let Android Studio upgrade it to Gradle 9.x. Android Studio also
+   creates `local.properties` with the correct `sdk.dir` for your machine.
+3. Add your key to that `local.properties` (git-ignored):
    ```properties
-   sdk.dir=/path/to/your/Android/sdk
    MAPS_API_KEY=your-api-key-here
    ```
-3. Open the project in Android Studio (Iguana or newer) and let it sync -
-   Android Studio will generate the Gradle wrapper on first sync if it's
-   missing. It reads `MAPS_API_KEY` from `local.properties` at build time
-   and compiles it into `BuildConfig.PLACES_API_KEY`, so the key is never
-   committed to source control.
+   then **File → Sync Project with Gradle Files**. The key is compiled into
+   `BuildConfig.PLACES_API_KEY` at build time, so it's never committed to
+   source control.
 4. Run on a device or emulator that has the **Google Maps app** installed
    (required, since a real device/Play emulator image is needed - the app
    launches Maps via an explicit package intent).

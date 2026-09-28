@@ -1,9 +1,9 @@
 # Copy this file to "local.properties" (which is git-ignored) and fill in
 # your own values. local.properties is read by app/build.gradle.kts.
 
-# Path to your Android SDK installation (Android Studio usually fills this
-# in automatically the first time you open the project).
-sdk.dir=/path/to/your/Android/sdk
+# Android Studio writes sdk.dir into local.properties automatically - don't
+# copy a placeholder path here, an invalid sdk.dir breaks Gradle sync.
+# sdk.dir=C\:\\Users\\YOU\\AppData\\Local\\Android\\Sdk
 
 # API key for a Google Cloud project that has the "Places API (New)"
 # enabled. Used only for the Nearby Search HTTP call that finds the
