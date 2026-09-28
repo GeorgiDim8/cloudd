@@ -1,0 +1,12 @@
+# Copy this file to "local.properties" (which is git-ignored) and fill in
+# your own values. local.properties is read by app/build.gradle.kts.
+
+# Path to your Android SDK installation (Android Studio usually fills this
+# in automatically the first time you open the project).
+sdk.dir=/path/to/your/Android/sdk
+
+# API key for a Google Cloud project that has the "Places API (New)"
+# enabled. Used only for the Nearby Search HTTP call that finds the
+# closest bus/train stop - it is compiled into BuildConfig.PLACES_API_KEY.
+# See README.md for setup instructions.
+MAPS_API_KEY=YOUR_API_KEY_HERE

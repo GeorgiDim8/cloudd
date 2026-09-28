@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Simple pin + bus glyph, centered in the 108x108 adaptive icon canvas. -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,22c-12.7,0 -23,10.3 -23,23c0,17.3 23,41 23,41s23,-23.7 23,-41C77,32.3 66.7,22 54,22z" />
+    <path
+        android:fillColor="#1A73E8"
+        android:pathData="M44,37h20a4,4 0,0 1,4 4v18a4,4 0,0 1,-4 4H44a4,4 0,0 1,-4 -4V41A4,4 0,0 1,44 37z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M43,42h22v10H43z" />
+    <path
+        android:fillColor="#1A73E8"
+        android:pathData="M46,58m-2.5,0a2.5,2.5 0,1 0,5 0a2.5,2.5 0,1 0,-5 0" />
+    <path
+        android:fillColor="#1A73E8"
+        android:pathData="M62,58m-2.5,0a2.5,2.5 0,1 0,5 0a2.5,2.5 0,1 0,-5 0" />
+</vector>
